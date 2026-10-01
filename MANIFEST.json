@@ -1,0 +1,123 @@
+{
+  "repo": "constant-state-attention",
+  "artifacts": [
+    {
+      "path": "results/capacity_recall.csv",
+      "bytes": 4559,
+      "sha256": "f405c007c2c8ff0722ceacaba9ed9498b41f3fbdbb9692e3073084ff9100bbc2"
+    },
+    {
+      "path": "results/capacity_summary.csv",
+      "bytes": 261,
+      "sha256": "20e8ea37d7caa258c8644b5a60c273664a7071bb2f2a5e7f7cbbfecc7756130a"
+    },
+    {
+      "path": "results/featmap_kernel.csv",
+      "bytes": 980,
+      "sha256": "0606346d2c09c404ffc7b0c141ce87d75810163d7f7cce669a9d01f9ea97c373"
+    },
+    {
+      "path": "results/hd_linear_quality.csv",
+      "bytes": 241,
+      "sha256": "6813de1acf1d94f7d2f4afe92a5fee2b1bed35c510ac469e36e4f3b85869b5a4"
+    },
+    {
+      "path": "results/hd_linear_speed.csv",
+      "bytes": 579,
+      "sha256": "ef28891cdc4b839efe927003ba4d25bd3d582c5047cdbfc56b135e2f5457bb91"
+    },
+    {
+      "path": "results/hybrid_mqar.csv",
+      "bytes": 505,
+      "sha256": "bc1fd3a90bd0eeb6e03b4b0f2a0f7a795a6c5f2509e50b2ad62b60db6fbf1f30"
+    },
+    {
+      "path": "results/infer_cpu.csv",
+      "bytes": 1843,
+      "sha256": "822b45e3e7e505a1008cd5c79d1ab0051c59c9103390f1e4bc076d3df6ee9fe4"
+    },
+    {
+      "path": "results/infer_gpu_1m.csv",
+      "bytes": 2237,
+      "sha256": "166e84d3f30279f122cacbd8e1c03a7d1f00efb4e96b7bb07b92e50d3340c286"
+    },
+    {
+      "path": "results/infer_gpu_1m_batch.csv",
+      "bytes": 912,
+      "sha256": "7412cc89b8f879f2303bb2d6c1ad6ab07d9167cb0cd565f77bfa373793306d57"
+    },
+    {
+      "path": "results/lm_train.json",
+      "bytes": 1020,
+      "sha256": "ac0091b84df3973714c45cc00fa299db8204008fad8cc4cf8f7687413b64487a"
+    },
+    {
+      "path": "results/mqar.csv",
+      "bytes": 342,
+      "sha256": "bd4f9c1791d3d91d5500f5bcb627657283e91cd51c4eecb7684bcd42c14fde5e"
+    },
+    {
+      "path": "results/speed_old_hdc.csv",
+      "bytes": 750,
+      "sha256": "36ba48079331285c11d98bbd1c0ed5bd6ab705cbb68a800d66e1ec367fced76e"
+    },
+    {
+      "path": "src/notebook.py",
+      "bytes": 127258,
+      "sha256": "fa9b036c8dadc680d8bca3f26dc1d07dff113d8121eb5ff6cdbcfad4d9182502"
+    },
+    {
+      "path": "weights/all_attn_4of4.pt",
+      "bytes": 3729705,
+      "sha256": "7bc5550b13a2afe10786fe93b27eb2110e30a208f1c52397307ee6c5213bde6b"
+    },
+    {
+      "path": "weights/all_linear_0of4.pt",
+      "bytes": 3729825,
+      "sha256": "f232518c1e1ebb6111566bb4a4ec009665d950a40810d4f76d868d38f537bba2"
+    },
+    {
+      "path": "weights/hybrid_3of4.pt",
+      "bytes": 3729585,
+      "sha256": "5a7acecb56a2ed7ffca454fb670a78ef9488e470df3204330134803045bc9085"
+    }
+  ],
+  "checkpoints": {
+    "all_attn_4of4": {
+      "display": "all-attn (4/4)",
+      "mask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "params": 1856063,
+      "file": "weights/all_attn_4of4.pt",
+      "bytes": 3729705
+    },
+    "hybrid_3of4": {
+      "display": "hybrid (3/4)",
+      "mask": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "params": 1856063,
+      "file": "weights/hybrid_3of4.pt",
+      "bytes": 3729585
+    },
+    "all_linear_0of4": {
+      "display": "all-linear (0/4)",
+      "mask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "params": 1856063,
+      "file": "weights/all_linear_0of4.pt",
+      "bytes": 3729825
+    }
+  }
+}

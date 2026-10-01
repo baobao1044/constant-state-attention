@@ -1,0 +1,16 @@
+{
+  "all_attn_4of4": "all-attn (4/4)",
+  "hybrid_3of4": "hybrid (3/4)",
+  "all_linear_0of4": "all-linear (0/4)",
+  "val_loss": {
+    "all_attn_4of4": 1.3351,
+    "hybrid_3of4": 1.3385,
+    "all_linear_0of4": 1.6547
+  },
+  "samples": {
+    "all_attn_4of4": "ROMEO: you to fortune,\\nYour content must undersely him.\\n\\nSICINIUS:\\nPrelay, may what, back me to be the gened on thee\\nThe and worshy clear thee in the disconour'd are hand\\nWhose many meany fortunes to the dar",
+    "hybrid_3of4": "ROMEO: you to for I,\\nOn your to be the brother, and Gaunt strel:\\nWe tell first with divined he love safe,\\nHe hate father and worsue cherity to me blood\\nThe of than am an dayor: my broke hand.\\n\\nSICINIUS:\\nMy g",
+    "all_linear_0of4": "ROMEO: you to fortle,\\nA seer to be to thing, I dess:\\nWho so swee meart to not crive, bandy did.\\n\\nSICINIUS:\\nI way, fay, borthat my you goy me, my come?\\n\\nFirst Murderam:\\nAnd to crearestes taid he shires to dea"
+  },
+  "note": "val_loss/samples tu cell wMvi"
+}
