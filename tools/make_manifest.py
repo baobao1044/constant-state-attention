@@ -33,6 +33,11 @@ def collect() -> dict:
         artifacts.append({"path": str(rel).replace("\\", "/"), "bytes": len(data),
                           "sha256": hashlib.sha256(data).hexdigest()})
 
+    # Sort by the POSIX path string.  Sorting ``Path`` objects directly is
+    # case-insensitive on Windows and case-sensitive on Linux, which would make the
+    # manifest differ between a local run and CI for the same tree.
+    artifacts.sort(key=lambda a: a["path"])
+
     checkpoints = {}
     for art in artifacts:
         if art["path"].startswith("weights/"):

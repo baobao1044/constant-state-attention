@@ -18,6 +18,16 @@
       "sha256": "ae8bcf85ad4b585515a3d49f4eaf7568a26fee1f73607b0cf5740d432e08cdcb"
     },
     {
+      "path": "LICENSE",
+      "bytes": 1063,
+      "sha256": "8d09cf0a41a9e5120e80ee2dcdc42e5c9fd84c60038e959580143c07fed25f9a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 19061,
+      "sha256": "1cf4f6fe954db1bafc550aeeab003a8a2ccd41ef95dacc5fcd41b368d1f55c0b"
+    },
+    {
       "path": "experiments/__init__.py",
       "bytes": 261,
       "sha256": "9c2c2083098ec42ae6cf3963684b23beebdf19c801d5a75e23a3832b367b3135"
@@ -38,24 +48,19 @@
       "sha256": "0c8b47bcf72f4accc2f1d412218329af2df8b8bb0ef18dadb0d2c706d80356fd"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1063,
-      "sha256": "8d09cf0a41a9e5120e80ee2dcdc42e5c9fd84c60038e959580143c07fed25f9a"
-    },
-    {
       "path": "pyproject.toml",
       "bytes": 818,
       "sha256": "779b6c83cb768245327338a350975bf9ea5d7c6e3e9124768d555bd2e0a3d4cd"
     },
     {
-      "path": "README.md",
-      "bytes": 19061,
-      "sha256": "1cf4f6fe954db1bafc550aeeab003a8a2ccd41ef95dacc5fcd41b368d1f55c0b"
-    },
-    {
       "path": "requirements.txt",
       "bytes": 338,
       "sha256": "b0dce8f87f9f9f70b20a653d4749cfc402bb192601b3ab0bdd0c47446512d6a0"
+    },
+    {
+      "path": "results/char_lm.csv",
+      "bytes": 424,
+      "sha256": "021ad0497ae2c64817fdd1991a3110fea946df1036ad681490e8dd578f24d8ba"
     },
     {
       "path": "results/char_lm/20261001T120818Z/config.json",
@@ -71,11 +76,6 @@
       "path": "results/char_lm/20261001T120818Z/metrics.csv",
       "bytes": 1413,
       "sha256": "482676b5da92679e416bc1f2407fcaa6007ca7fd96844fa7d4fb53a8f3431347"
-    },
-    {
-      "path": "results/char_lm.csv",
-      "bytes": 424,
-      "sha256": "021ad0497ae2c64817fdd1991a3110fea946df1036ad681490e8dd578f24d8ba"
     },
     {
       "path": "results/char_lm_per_seed.csv",
@@ -98,6 +98,11 @@
       "sha256": "dc41279c924aa2382e3195f81ad85fad0ecf91b6a193d5b16370ad91a97116a8"
     },
     {
+      "path": "results/decode_bench.csv",
+      "bytes": 3854,
+      "sha256": "a5964e2b66b7c61f43b5e62065c9c77a0c33a9e596127f00b9fee7706ce6000a"
+    },
+    {
       "path": "results/decode_bench/20261001T120832Z/config.json",
       "bytes": 220,
       "sha256": "e3d512ff79f610d956c4977cb7c0b5a7b4d352282552ebcab1f24d0b8ff836d8"
@@ -113,14 +118,14 @@
       "sha256": "26fbf06a47c893096ed150e791dec38ee6dae303bbdbac03d6cfe7c1f6c93d80"
     },
     {
-      "path": "results/decode_bench.csv",
-      "bytes": 3854,
-      "sha256": "a5964e2b66b7c61f43b5e62065c9c77a0c33a9e596127f00b9fee7706ce6000a"
-    },
-    {
       "path": "results/decode_hybrid.csv",
       "bytes": 1065,
       "sha256": "6471730f56533db611830ee2b1355a17e70d106601bd08a93251d72f731e2669"
+    },
+    {
+      "path": "results/hybrid_ratio.csv",
+      "bytes": 1165,
+      "sha256": "329cb413a061234012e5d3f7acc2937708f00c873599e71e9c0f1a56a4672c11"
     },
     {
       "path": "results/hybrid_ratio/20261001T122949Z/config.json",
@@ -138,14 +143,14 @@
       "sha256": "fbaac58fbd8b58256c45d26fe2efa1bd0db00641c7ed63eec2e7a17379529a72"
     },
     {
-      "path": "results/hybrid_ratio.csv",
-      "bytes": 1165,
-      "sha256": "329cb413a061234012e5d3f7acc2937708f00c873599e71e9c0f1a56a4672c11"
-    },
-    {
       "path": "results/hybrid_ratio_per_seed.csv",
       "bytes": 3103,
       "sha256": "fbaac58fbd8b58256c45d26fe2efa1bd0db00641c7ed63eec2e7a17379529a72"
+    },
+    {
+      "path": "results/mqar.csv",
+      "bytes": 1545,
+      "sha256": "67a703500c44ca8d8a2723e2dda7bbe30256fd31c38d94f96a4679efdb825245"
     },
     {
       "path": "results/mqar/20261001T120451Z/config.json",
@@ -161,11 +166,6 @@
       "path": "results/mqar/20261001T120451Z/metrics.csv",
       "bytes": 3515,
       "sha256": "60267b083e729a9d0d46c52cf23d216c490205b96f0b8ae376989e38d84bd151"
-    },
-    {
-      "path": "results/mqar.csv",
-      "bytes": 1545,
-      "sha256": "67a703500c44ca8d8a2723e2dda7bbe30256fd31c38d94f96a4679efdb825245"
     },
     {
       "path": "results/mqar_l4.csv",
@@ -304,8 +304,8 @@
     },
     {
       "path": "tools/make_manifest.py",
-      "bytes": 2244,
-      "sha256": "3dc2976c3f0d6f2a4560b413f4d655af3dc415f4609557902332a373b80f740a"
+      "bytes": 2516,
+      "sha256": "2e386b6f08b0a0a1978e8c79e01e3ee9a98cf318da6b8003175f91a81b4d39f3"
     },
     {
       "path": "tools/render_tables.py",
