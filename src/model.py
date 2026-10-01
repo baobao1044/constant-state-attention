@@ -47,7 +47,8 @@ class StdAttention(nn.Module):
         k = self.Wk(x).view(B, S, N_HEADS, HEAD_DIM).transpose(1, 2)
         v = self.Wv(x).view(B, S, N_HEADS, HEAD_DIM).transpose(1, 2)
         sc = (q @ k.transpose(-2, -1)) / HEAD_DIM ** 0.5
-        sc = sc.masked_fill(~torch.tril(torch.ones(S, S, dtype=torch.bool)), float("-inf"))
+        sc = sc.masked_fill(~torch.tril(torch.ones(S, S, dtype=torch.bool, device=x.device)),
+                            float("-inf"))
         return self.Wo((sc.softmax(-1) @ v).transpose(1, 2).reshape(B, S, D_MODEL))
 
     def new_cache(self, maxlen: int, batch: int = 1) -> dict:
@@ -91,7 +92,7 @@ class LinearAttention(nn.Module):
         st = x.new_zeros(B, N_HEADS, HEAD_DIM, HEAD_DIM)
         z = x.new_zeros(B, N_HEADS, HEAD_DIM)
         outs = []
-        tril = torch.tril(torch.ones(CHUNK, CHUNK, dtype=torch.bool))
+        tril = torch.tril(torch.ones(CHUNK, CHUNK, dtype=torch.bool, device=x.device))
         for i in range(0, S, CHUNK):
             qc, kc, vc = q[:, i:i + CHUNK], k[:, i:i + CHUNK], v[:, i:i + CHUNK]
             c = qc.shape[1]
@@ -124,6 +125,18 @@ class LinearAttention(nn.Module):
 
 
 class Block(nn.Module):
+    """Pre-norm block with a **shared-residual read** for both sublayers::
+
+        z   = x + attn(ln1(x))
+        out = x + mlp(ln2(z))
+
+    This is *not* the standard Transformer block, which would be
+    ``out = z + mlp(ln2(z))``.  Every variant in this repo uses this same block, so
+    comparisons between variants are internally fair, but it is not a drop-in
+    Transformer baseline.  Changing the residual would invalidate the shipped
+    checkpoints, so it is documented rather than changed; see README "Limitations".
+    """
+
     def __init__(self, is_attn: bool) -> None:
         super().__init__()
         self.ln1 = nn.LayerNorm(D_MODEL)
@@ -164,7 +177,7 @@ class CharLM(nn.Module):
 
     def step(self, tok: torch.Tensor, c: dict) -> torch.Tensor:
         x = self.emb(tok) + self.pe(torch.tensor([c["pos"]], device=tok.device))
-        for b, bc in zip(self.blocks, c["blocks"]):
+        for b, bc in zip(self.blocks, c["blocks"], strict=True):
             x = b.step(x, bc)
         c["pos"] += 1
         return self.head(self.lnf(x))
@@ -192,7 +205,7 @@ def load_checkpoint(path, map_location="cpu", dtype=torch.float32):
     ``dtype`` (fp32 by default) on load, which is the precision they were trained in.
     Pass ``dtype=None`` to keep the stored precision.
     """
-    ck = torch.load(path, map_location=map_location, weights_only=False)
+    ck = torch.load(path, map_location=map_location, weights_only=True)
     sd = ck["state_dict"]
     if dtype is not None:
         sd = {k: v.to(dtype) for k, v in sd.items()}

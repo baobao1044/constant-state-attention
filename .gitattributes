@@ -1,0 +1,6 @@
+# Keep line endings identical everywhere: MANIFEST.json stores sha256 of file bytes,
+# and CI (Linux) plus Windows checkouts must produce the same bytes.
+* text=auto eol=lf
+
+*.pt binary
+*.png binary

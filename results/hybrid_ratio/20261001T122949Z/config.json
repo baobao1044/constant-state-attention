@@ -1,0 +1,21 @@
+{
+  "batch": 64,
+  "configs": [
+    "attn_0of4",
+    "attn_1of4_first",
+    "attn_1of4_last",
+    "attn_2of4",
+    "attn_3of4",
+    "attn_4of4"
+  ],
+  "device": "cuda",
+  "lr": 0.003,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "steps": 2000
+}

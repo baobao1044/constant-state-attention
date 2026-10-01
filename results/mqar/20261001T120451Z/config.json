@@ -1,0 +1,29 @@
+{
+  "batch": 64,
+  "device": "cuda",
+  "eval_pairs": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "layers": 4,
+  "lr": 0.003,
+  "n_pairs": 8,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "steps": 2000,
+  "variants": [
+    "std",
+    "linear_elu_M32",
+    "linear_elu_M256",
+    "linear_relu_M32",
+    "linear_identity_M32",
+    "delta_rule"
+  ]
+}

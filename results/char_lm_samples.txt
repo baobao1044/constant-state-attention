@@ -1,0 +1,143 @@
+### all_attn_4of4 seed=0 (val=1.5308)
+ROMEO: how head shall could be down,
+To desire, think to his firest live
+That the mayor ever in the iancent;
+What thou noble doth born the ragle war,
+His noble than shall ampeach of afterity.
+
+CORIOLANUS:
+In
+
+### all_attn_4of4 seed=1 (val=1.5308)
+ROMEO: think thou hast to two much do heavenly and
+Whose in we a sighty of the mocks.
+
+BRUTUS:
+I do for the pronous of blind,
+What us you suppers away you the heart;
+And your are famity outs and rage,
+How ma
+
+### all_attn_4of4 seed=2 (val=1.5285)
+ROMEO: tood good not that touch'd bear.
+
+QUEEN ELIZABETH:
+Haster to tribunes him boother loss;
+And respect a life repried and alp
+And aconvion.
+
+GLOUCESTER:
+No them to faith her busin my country's leads
+Are 
+
+### all_attn_4of4 seed=3 (val=1.5527)
+ROMEO: the being, Clarence he grieve dead,
+And whatrey they in clance he to people,
+And were a ded with the partion,
+Requitic fies of you, the cause and harm,
+He done the piector all this name lie,
+Hath and 
+
+### all_attn_4of4 seed=4 (val=1.5330)
+ROMEO: say, I could die thee,
+For ever thy severeign and rights,
+Lies your contry's nature live, you have you chargly:
+The gods from me brave think hath recived again:
+Since he was to the enterce Buckingham,
+
+### hybrid_3of4 seed=0 (val=1.5314)
+ROMEO: he comes such my sworn!
+But has me some, think too perfided,
+Withore should he more! my was might not than,
+And for be warrow the point, and there is me
+Than he is among cold af worth breath.
+
+First M
+
+### hybrid_3of4 seed=1 (val=1.5332)
+ROMEO: think thou him, and where we marks,
+Alas to whose in we a sight rock'd the days man
+Than a more an hapt not to hither,
+What us you suffer make you and members,
+To be that of must his cannot train;
+I d
+
+### hybrid_3of4 seed=2 (val=1.5290)
+ROMEO: tood good not that touch tell be
+Both his ready won means to mother.
+
+SICINIUS:
+I love then respect in this lips,
+I not ope on my son, this hungries to him.
+
+AUFIDIUS:
+Up the uncle the was all.
+
+CORIO
+
+### hybrid_3of4 seed=3 (val=1.5640)
+ROMEO: the being him.
+
+DUCHESS:
+If you more cames tribunes, if contruct thou, I friends
+And sued do his banish time a voices;
+The botterng to book'd and not out threats
+Happrivak athor thy percess, you, and 
+
+### hybrid_3of4 seed=4 (val=1.5438)
+ROMEO: say is our heart to answelded
+Engly we comfort with in drums power,
+If the viole husun, they shall you corn'd,
+In my brobly; as I saving general your remend
+Bring speak of it.
+
+Lord Madius, this may p
+
+### all_linear_0of4 seed=0 (val=1.7887)
+ROMEO: hou sond such my shall durde thou them.
+
+PRINCHE IIND:
+Ay, told to myse them, Marcius is and it man.
+
+KING RICHARD III:
+The distencery lor and brother, my with be
+Pamain I lived woith browerd postincl
+
+### all_linear_0of4 seed=1 (val=1.7697)
+ROMEO: this good, him, I waw a preed
+Prove slave o' do with we mading wromshmery.
+
+Second Servingman:
+Eay I strigh tongutid!
+
+VOLUMNIA:
+I lay, lord, he leave, heir of my death, both sto ticke a
+frome, and ma
+
+### all_linear_0of4 seed=2 (val=1.8109)
+ROMEO: and I go, no lie con,
+And eveal have a for the the mine;
+He hartt we a know ought los and lore.
+
+KING RICHARD III:
+Stith, thought do my himst be his thou way
+As frivends he such.
+
+KING RICHARD III:
+Ha
+
+### all_linear_0of4 seed=3 (val=1.8363)
+ROMEO: the be is hill waske thou frand
+To shame be rey the him conty chollond onf it.
+But deseeds shall, then suirne
+Re with that to deenge of of queay heard,
+He the with pidivedeng frome the cort,
+When and 
+
+### all_linear_0of4 seed=4 (val=1.8101)
+ROMEO: say Marciusht
+Me the brooke the thy seectent one tristed
+That kids in the word, I have thangss pairy.
+Who you you my brobly; I say all light hat you,
+And a hert as popent lie of and him him;
+Tis may i

@@ -1,9 +1,12 @@
 __pycache__/
 *.py[cod]
 *.b64
+data/
 .ipynb_checkpoints/
 .venv/
 venv/
 *.egg-info/
+.pytest_cache/
+.ruff_cache/
 .DS_Store
 Thumbs.db
