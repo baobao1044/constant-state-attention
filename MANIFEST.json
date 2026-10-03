@@ -33,6 +33,11 @@
       "sha256": "9c2c2083098ec42ae6cf3963684b23beebdf19c801d5a75e23a3832b367b3135"
     },
     {
+      "path": "experiments/based.py",
+      "bytes": 8076,
+      "sha256": "37151f2054f117397e8631c81b0bde0ffe55eb104241b3876fd9e28d1025d1d6"
+    },
+    {
       "path": "experiments/char_lm.py",
       "bytes": 7335,
       "sha256": "5563a3bcc427338ad631a0e89ebbd25f054512051a7e14c7d26173eb417e5455"
@@ -56,6 +61,41 @@
       "path": "requirements.txt",
       "bytes": 338,
       "sha256": "b0dce8f87f9f9f70b20a653d4749cfc402bb192601b3ab0bdd0c47446512d6a0"
+    },
+    {
+      "path": "results/based/20261003T173753Z/config.json",
+      "bytes": 260,
+      "sha256": "ec77b0e1a01986d462b934ba53ed624793d035381b5a0aa15707bcdca2337ba3"
+    },
+    {
+      "path": "results/based/20261003T173753Z/env.json",
+      "bytes": 292,
+      "sha256": "3e1d503589cc6a88fcd09198fb5d0b5283053ba17d56b4f8ba2c3ffd79613ecb"
+    },
+    {
+      "path": "results/based/20261003T173753Z/metrics.csv",
+      "bytes": 1447,
+      "sha256": "89bd2dde88f70df636e5a3e232d537c29aa14cc4485f3f542ce5612ba029bb3c"
+    },
+    {
+      "path": "results/based_5s.csv",
+      "bytes": 587,
+      "sha256": "621f9c8e7a24d88d9200cdf8a9fa53a2c4bde87f95d990deff2e919eb77f19aa"
+    },
+    {
+      "path": "results/based_5s_per_seed.csv",
+      "bytes": 1447,
+      "sha256": "89bd2dde88f70df636e5a3e232d537c29aa14cc4485f3f542ce5612ba029bb3c"
+    },
+    {
+      "path": "results/based_l4.csv",
+      "bytes": 953,
+      "sha256": "3f2650ed292a22804e842e5a5572017a21a3f935f3c5d69a30e7996d68a31e97"
+    },
+    {
+      "path": "results/based_l4_per_seed.csv",
+      "bytes": 1452,
+      "sha256": "0355c2d4c7b61fbf5b5e7695e88de495e15f18874f47531edbfcce670b204020"
     },
     {
       "path": "results/char_lm.csv",
